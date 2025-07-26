@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Productivity Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+    canvas {
+      max-width: 400px;
+      margin: 20px auto;
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>📊 Productivity Dashboard</h2>
+  <canvas id="productivityChart"></canvas>
+  <h3>Weekly Report</h3>
+  <table>
+    <thead>
+      <tr><th>Website</th><th>Total Time</th></tr>
+    </thead>
+    <tbody id="weeklyReport"></tbody>
+  </table>
+  <script src="dashboard.js"></script>
+</body>
+</html>
